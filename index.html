@@ -18,22 +18,24 @@
     /* Desktop image */
     .desktop-img {
       display: block; /* To remove any extra spaces caused by inline elements */
+      width: 100%; /* Make image responsive */
+      height: auto;
     }
 
     /* Mobile image */
     .mobile-img {
       display: none; /* Initially hide for desktop */
+      width: 100%; /* Make image responsive */
+      height: auto;
     }
 
     /* Media query for mobile devices (up to 767px width) */
-    @media only screen and (min-width: 767px) {
+    @media only screen and (max-width: 767px) {
       .desktop-img {
         display: none; /* Hide desktop image on mobile */
       }
       .mobile-img {
         display: block; /* Display mobile image on mobile */
-        width: 100%; /* Adjust width for mobile */
-        height: auto;
       }
     }
   </style>
