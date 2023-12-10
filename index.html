@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monkthreads</title>
+  <style>
+    body {
+      color: black;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Hide the text visually */
+    .text {
+      position: absolute;
+      left: -9999px;
+    }
+
+    /* Desktop image */
+    .desktop-img {
+      display: block; /* To remove any extra spaces caused by inline elements */
+    }
+
+    /* Mobile image */
+    .mobile-img {
+      display: none; /* Initially hide for desktop */
+    }
+
+    /* Media query for mobile devices (up to 767px width) */
+    @media only screen and (max-width: 767px) {
+      .desktop-img {
+        display: none; /* Hide desktop image on mobile */
+      }
+      .mobile-img {
+        display: block; /* Display mobile image on mobile */
+        width: 100%; /* Adjust width for mobile */
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Text - visually hidden -->
+  <h1 class="text">Monkthreads</h1>
+
+  <!-- Desktop Image -->
+  <img class="desktop-img" src="wireframe.png" alt="Monkthreads">
+
+  <!-- Mobile Image -->
+  <img class="mobile-img" src="respo-wireframe.png" alt="Monkthreads">
+</body>
+</html>
