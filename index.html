@@ -18,15 +18,11 @@
     /* Desktop image */
     .desktop-img {
       display: block; /* To remove any extra spaces caused by inline elements */
-      width: 100%; /* Make image responsive */
-      height: auto;
     }
 
     /* Mobile image */
     .mobile-img {
       display: none; /* Initially hide for desktop */
-      width: 100%; /* Make image responsive */
-      height: auto;
     }
 
     /* Media query for mobile devices (up to 767px width) */
@@ -36,6 +32,8 @@
       }
       .mobile-img {
         display: block; /* Display mobile image on mobile */
+        width: 100%; /* Adjust width for mobile */
+        height: auto;
       }
     }
   </style>
@@ -48,6 +46,6 @@
   <img class="desktop-img" src="wireframe.png" alt="Monkthreads">
 
   <!-- Mobile Image -->
-  <img class="mobile-img" src="android-small.png" alt="Monkthreads">
+  <img class="mobile-img" src="respo-wireframe.png" alt="Monkthreads">
 </body>
 </html>
