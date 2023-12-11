@@ -1,52 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Monkthreads</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <style>
-    body {
-      color: black;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* Hide the text visually */
-    .text {
-      position: absolute;
-      left: -9999px;
-    }
-
-    /* Desktop image */
-    .desktop-img {
-      display: block; /* To remove any extra spaces caused by inline elements */
-    }
-
-    /* Mobile image */
-    .mobile-img {
-      display: none; /* Initially hide for desktop */
-    }
-
-    /* Media query for mobile devices (up to 767px width) */
-    @media only screen and (min-width: 767px) {
-      .desktop-img {
-        display: none; /* Hide desktop image on mobile */
-      }
-      .mobile-img {
-        display: block; /* Display mobile image on mobile */
-        width: 100%; /* Adjust width for mobile */
-        height: auto;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Text - visually hidden -->
-  <h1 class="text">Monkthreads</h1>
-
-  <!-- Desktop Image -->
-  <img class="desktop-img" src="wireframe.png" alt="Monkthreads">
-
-  <!-- Mobile Image -->
-  <img class="mobile-img" src="respo-wireframe.png" alt="Monkthreads">
+  <div class="container">
+    <h1>Monkthreads</h1>
+  </div>
 </body>
 </html>
